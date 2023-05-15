@@ -1,9 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import NavBar from "./components/navBar/NavBar";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
-    <h1>Arrancamos el E-commers</h1>
+    <NavBar/>    
   </>
 );
+//productItems
+//addProduct
+//NabBard
