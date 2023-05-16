@@ -19,3 +19,7 @@ code {
   border-radius: 10px;
   border: solid #8d99ae 3px;
 }
+
+#products-container {
+  display: flex;
+}
