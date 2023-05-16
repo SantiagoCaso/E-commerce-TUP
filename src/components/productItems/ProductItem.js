@@ -7,7 +7,7 @@ const ProductItem = () => {
       <h3>Nombre del producto</h3>
       <p>Descripción</p>
       <p>Precio</p>
-      <p>Stok</p>
+      <p>Stock</p>
     </div>
   );
 };
