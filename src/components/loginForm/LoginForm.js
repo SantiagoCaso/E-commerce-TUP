@@ -29,24 +29,26 @@ function LoginForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="form">
       <label>
-        <div className="emailStile">Correo electrónico:</div>
+        <p className="emailStile">Correo electrónico:</p>
         <input
           type="email"
           name="email"
           value={email}
           onChange={handleChange}
+          className="inputEmail"
         />
       </label>
       <br />
       <label>
-        <div className="passwordStile">Contraseña:</div>
+        <p className="passwordStile">Contraseña:</p>
         <input
           type="password"
           name="password"
           value={password}
           onChange={handleChange}
+          className="inputPassword"
         />
       </label>
       <br />
