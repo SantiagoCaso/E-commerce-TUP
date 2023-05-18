@@ -1,4 +1,36 @@
-.emailStile {
-  text-decoration: dashed;
-  background-color: brown;
+.emailStile , .passwordStile {
+    font: small-caps 100%/200% serif;
+    font-weight: 600;
+    margin: -1%;
 }
+
+.startButton, .restartButton{
+    font: small-caps 100%/200% serif;
+    font-weight:600;
+    
+    
+}
+
+.form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: double;
+    border-color: black;
+  }
+  
+  .form input {
+    width: 100%;
+    height: 30px;
+    margin: -0.1rem;
+  }
+  
+  .form button {
+    padding: 0.2em 2em;
+    background: rgb(100, 200, 255);
+    cursor: pointer;
+  }
