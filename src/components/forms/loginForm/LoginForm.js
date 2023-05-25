@@ -1,5 +1,6 @@
+
 import React, { useState } from "react";
-import "./loginFormStile/LoginForm.css";
+import "./LoginForm.css";
 
 function LoginForm() {
   // crea el estado utilizando useState para mantener un seguimiento de los valores ingresados en los campos de inicio de sesión.
@@ -52,11 +53,11 @@ function LoginForm() {
         />
       </label>
       <br />
-      <button type="submit" className="startButton">
+      <button type="submit" className="button">
         Iniciar sesión
       </button>
-      <button type="reset" className="restartButton" onSubmit={handleReset}>
-        Restablecer
+      <button type="reset" className="button" onSubmit={handleReset}>
+        Recuperar Contraseña
       </button>
     </form>
   );

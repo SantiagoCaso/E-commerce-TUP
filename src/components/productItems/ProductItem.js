@@ -1,14 +1,24 @@
-import "./ProductItem.css";
+import { useEffect, useState } from "react";
+import ProductCard from "../productCard/ProductCard";
 
 const ProductItem = () => {
+  const [product, setProduct]= useState([]);
+  const getProduct = async () =>{
+    const response = await fetch('https://rickandmortyapi.com/api/character')
+    const data = await response.json()
+
+    setProduct(data.result)
+  }
+useEffect(()=>{
+   getProduct()
+}, [])
+
   return (
-    <div className="product">
-      <img className="img-products" alt="imagen-del-producto"></img>
-      <h3>Nombre del producto</h3>
-      <p>Descripción</p>
-      <p>Precio</p>
-      <p>Stock</p>
-    </div>
+    <>
+      {product.map(p=> <ProductCard key={p.id} image={p.image} name={p.name} color={p.color} size={p.size}/>)}
+    </>
+      
+    
   );
 };
 

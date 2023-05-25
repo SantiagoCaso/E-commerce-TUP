@@ -1,6 +1,6 @@
-import Button from "react-bootstrap/Button";
+
 import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
+
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
@@ -9,7 +9,7 @@ function NavBar() {
   return (
     <Navbar bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        <Navbar.Brand href="#">Icono de la tienda</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -17,19 +17,21 @@ function NavBar() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="/products">Home</Nav.Link>
-            <Nav.Link href="/login">Login</Nav.Link>
+            <Nav.Link href="/products">Ofertas</Nav.Link>
+            <Nav.Link href="/login">Iniciar sesion</Nav.Link>
             <NavDropdown title="Categorías" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Remeras</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Pantalones</NavDropdown.Item>
-              <NavDropdown.Divider />
+              <NavDropdown.Item href="/products">Remeras</NavDropdown.Item>
+              <NavDropdown.Item href="">Pantalones</NavDropdown.Item>
               <NavDropdown.Item href="#action5">Camperas</NavDropdown.Item>
+              <NavDropdown.Item href="#action6">Buzos</NavDropdown.Item>
+              <NavDropdown.Item href="#action7">Camisas</NavDropdown.Item>
+              <NavDropdown.Item href="#action8">Gorras</NavDropdown.Item>
+              <NavDropdown.Item href="#action9">Calzado</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action10">asd</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#" disabled>
-              Carrito
-            </Nav.Link>
           </Nav>
-          <Form className="d-flex">
+          {/* <Form className="d-flex">
             <Form.Control
               type="search"
               placeholder="Search"
@@ -37,9 +39,10 @@ function NavBar() {
               aria-label="Search"
             />
             <Button className="button" variant="outline-success">
-              Search
+              Buscar
             </Button>
-          </Form>
+          </Form> */}
+          <Nav.Link href="/shoppingCart">Carrito</Nav.Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>
